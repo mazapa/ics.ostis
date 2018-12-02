@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_cinocompanies_by_year_and_country <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_cinocompanies_by_year_and_country 
+=> nrel_main_idtf: 
+	[Какие кинокомпании соответствуют указанной стране и году основания?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех кинокомпаний по стране и году основания] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_cinocompanies_by_year_and_country 
+=> nrel_main_idtf: 
+	[Which film companies correspond to the specified country and year of foundation?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request of all film companies by country and year of establishment] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_cinocompanies_by_year_and_country => ui_nrel_command_template:
+	[*
+		action_of_finding_cinocompanies_by_year_and_country _-> ._action_of_finding_finding_cinocompanies_by_year_and_country_instance
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_of_finding_finding_cinocompanies_by_year_and_country_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_cinocompanies_by_year_and_country => ui_nrel_command_lang_template: 
+	[Какие кинокомпании находятся в стране $ui_arg_1 и которые основаны в $ui_arg_2 году?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_cinocompanies_by_year_and_country => ui_nrel_command_lang_template: 
+	[Which film companies are in the country $ ui_arg_1 and which are based in $ ui_arg_2?] 
+	(* <- lang_en;; *);;
