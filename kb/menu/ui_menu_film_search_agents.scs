@@ -5,7 +5,11 @@ ui_menu_film_search_agents <- ui_user_command_class_noatom;
 {
 	ui_menu_find_films_by_hero;
 	ui_menu_file_for_finding_film_by_cinocompanies_and_year;
-	ui_menu_file_for_finding_cinocompanies_by_year_and_country
+	ui_menu_file_for_finding_cinocompanies_by_year_and_country;
+	ui_menu_file_for_finding_film_by_producer_and_year;
+	ui_menu_file_for_finding_series_by_company_and_year;
+        ui_menu_find_film_by_composer;
+	ui_menu_find_series_by_screenwriter
 };
 
 <- rrel_key_sc_element:
