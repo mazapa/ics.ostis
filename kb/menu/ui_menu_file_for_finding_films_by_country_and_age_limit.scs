@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_films_by_country_and_age_limit <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_films_by_country_and_age_limit 
+=> nrel_main_idtf: 
+	[Какие фильмы соответствуют указанному возрастному ограничению и стране?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех вильмов, соответствующих указанным возрастному ограничению и стране ных двух] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_films_by_country_and_age_limit 
+=> nrel_main_idtf: 
+	[Which films belong to given age rating and country?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request of all films that belong to given age rating and country] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_films_by_country_and_age_limit => ui_nrel_command_template:
+	[*
+		action_of_finding_films_by_country_and_age_limit _-> .action_of_finding_films_by_country_and_age_limit
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		.action_of_finding_films_by_country_and_age_limit _<- question;;
+	*];;
+
+ui_menu_file_for_finding_films_by_country_and_age_limit => ui_nrel_command_lang_template: 
+	[Какие фильмы имею возрастное ограничение $ui_arg_1 и были сняты в стране $ui_arg_2?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_films_by_country_and_age_limit => ui_nrel_command_lang_template: 
+	[Request of all films with $ui_arg_1 age limit and filmed in $ui_arg_2] 
+	(* <- lang_en;; *);;
