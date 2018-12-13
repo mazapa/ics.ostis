@@ -13,7 +13,10 @@ ui_menu_film_search_agents <- ui_user_command_class_noatom;
 	ui_menu_file_for_finding_video_sequences_by_age_limit_and_country;
 	ui_menu_file_for_finding_films_by_actor_and_production_year;
 	ui_menu_file_for_finding_films_by_country_and_age_limit;
-	ui_menu_file_for_finding_film_by_genre_and_actor
+	ui_menu_file_for_finding_film_by_genre_and_actor;
+	ui_menu_find_film_awards;
+	ui_menu_find_film_by_director
+
 };
 
 <- rrel_key_sc_element:
