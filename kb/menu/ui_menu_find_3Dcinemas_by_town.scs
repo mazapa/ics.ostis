@@ -1,0 +1,17 @@
+ui_menu_find_3Dcinemas_by_town  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_3Dcinemas_by_town  => nrel_main_idtf: [Найти 3D кинотеатры в выбранном городе] (* <- lang_ru;; *);;
+ui_menu_find_3Dcinemas_by_town  => nrel_main_idtf: [Find 3D cinemas in town] (* <- lang_en;; *);;
+ui_menu_find_3Dcinemas_by_town  => ui_nrel_command_template:
+	[*
+		question_scp_find_3Dcinemas_by_town _-> ._question_scp_find_3Dcinemas_by_town_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_3Dcinemas_by_town_instance _<- question;;
+
+	*];;
+
+ui_menu_find_3Dcinemas_by_town  => ui_nrel_command_lang_template: [Найденные 3D кинотеатры] (* <- lang_ru;; *);;
+ui_menu_find_3Dcinemas_by_town  => ui_nrel_command_lang_template: [3Dcinemas] (* <- lang_en;; *);;
+
