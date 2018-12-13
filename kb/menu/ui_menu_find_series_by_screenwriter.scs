@@ -1,0 +1,17 @@
+ui_menu_find_series_by_screenwriter <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_series_by_screenwriter  => nrel_main_idtf: [Найти сериалы по автору сценария] (* <- lang_ru;; *);;
+ui_menu_find_series_by_screenwriter  => nrel_main_idtf: [Find series by screenwriter] (* <- lang_en;; *);;
+ui_menu_find_series_by_screenwriter  => ui_nrel_command_template:
+	[*
+		question_scp_find_series_by_screenwriter _-> ._question_scp_find_series_by_screenwriter_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_series_by_screenwriter_instance _<- question;;
+
+	*];;
+
+ui_menu_find_series_by_screenwriter  => ui_nrel_command_lang_template: [Найденные сериалы] (* <- lang_ru;; *);;
+ui_menu_find_series_by_screenwriter  => ui_nrel_command_lang_template: [Series] (* <- lang_en;; *);;
+
