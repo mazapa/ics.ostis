@@ -1,0 +1,17 @@
+ui_menu_find_film_by_director  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_film_by_director  => nrel_main_idtf: [Найти фильмы которые снял режиссёр] (* <- lang_ru;; *);;
+ui_menu_find_film_by_director  => nrel_main_idtf: [Find films directed by] (* <- lang_en;; *);;
+ui_menu_find_film_by_director  => ui_nrel_command_template:
+	[*
+		question_scp_find_film_by_director _-> ._question_scp_find_film_by_director_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_film_by_director_instance _<- question;;
+
+	*];;
+
+ui_menu_find_film_by_director  => ui_nrel_command_lang_template: [Найденные фильмы] (* <- lang_ru;; *);;
+ui_menu_find_film_by_director  => ui_nrel_command_lang_template: [Films] (* <- lang_en;; *);;
+
