@@ -3,6 +3,7 @@ ui_menu_film_search_agents <- ui_user_command_class_noatom;
 => nrel_main_idtf: [Search agents] (* <- lang_en;; *);
 <= nrel_ui_commands_decomposition:
 {
+	ui_menu_file_for_finding_festivals_by_year_and_country;
 	ui_menu_find_films_by_hero;
 	ui_menu_file_for_finding_film_by_cinocompanies_and_year;
 	ui_menu_file_for_finding_cinocompanies_by_year_and_country;
